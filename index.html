@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skyipark — Elevate Your Living</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <span class="nav__logo-sky">SKY</span><span class="nav__logo-i">i</span><span class="nav__logo-park">PARK</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#amenities">Amenities</a></li>
+      <li><a href="#contact" class="nav__cta">Enquire Now</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="images/render1.jpg" alt="Skyipark Pool View" class="hero__img active" id="heroImg" onerror="this.style.display='none'" />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Luxury Residences</p>
+      <h1 class="hero__title">
+        Where the Sky<br /><em>Meets Home</em>
+      </h1>
+      <p class="hero__subtitle">Premium residences designed for those who seek the extraordinary.<br />Skyipark — a new landmark of elevated living.</p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary">Enquire Now</a>
+        <a href="#gallery" class="btn btn--outline">View Gallery</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+    <div class="hero__stats">
+      <div class="hero__stat">
+        <span class="hero__stat-num">3</span>
+        <span class="hero__stat-label">Towers</span>
+      </div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat">
+        <span class="hero__stat-num">25+</span>
+        <span class="hero__stat-label">Floors</span>
+      </div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat">
+        <span class="hero__stat-num">40+</span>
+        <span class="hero__stat-label">Amenities</span>
+      </div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat">
+        <span class="hero__stat-num">2–4</span>
+        <span class="hero__stat-label">BHK</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="overview" id="overview">
+    <div class="container">
+      <div class="overview__grid">
+        <div class="overview__text">
+          <p class="section-eyebrow">About the Project</p>
+          <h2 class="section-title">A Symphony of<br /><em>Space &amp; Light</em></h2>
+          <p class="overview__body">Skyipark rises as a testament to thoughtful architecture and refined living. Three elegant towers stand amidst lush tropical landscaping, offering panoramic views that stretch across the horizon at every golden hour.</p>
+          <p class="overview__body">Each residence is crafted with meticulous attention to detail — from double-height lobbies to expansive balconies that blur the boundary between indoors and the open sky.</p>
+          <div class="overview__tags">
+            <span class="tag">RERA Approved</span>
+            <span class="tag">Ready Possession</span>
+            <span class="tag">Vastu Compliant</span>
+          </div>
+        </div>
+        <div class="overview__visual">
+          <img src="images/render2.jpg" alt="Skyipark Aerial View" class="overview__img" onerror="this.style.display='none'" />
+          <div class="overview__badge">
+            <span class="overview__badge-num">500+</span>
+            <span class="overview__badge-text">Happy Families</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <p class="section-eyebrow center">Visual Tour</p>
+      <h2 class="section-title center">Experience<br /><em>Skyipark</em></h2>
+    </div>
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--large" data-index="0">
+        <img src="images/render1.jpg" alt="Pool &amp; Tower at Dusk" onerror="this.style.display='none'" />
+        <div class="gallery__caption">Infinity Pool &amp; Tower</div>
+        <div class="gallery__zoom">&#x2B;</div>
+      </div>
+      <div class="gallery__item" data-index="1">
+        <img src="images/render2.jpg" alt="Three Towers Aerial" onerror="this.style.display='none'" />
+        <div class="gallery__caption">Three Tower Ensemble</div>
+        <div class="gallery__zoom">&#x2B;</div>
+      </div>
+      <div class="gallery__item" data-index="2">
+        <img src="images/render3.jpg" alt="Garden Dining" onerror="this.style.display='none'" />
+        <div class="gallery__caption">Garden Dining Terrace</div>
+        <div class="gallery__zoom">&#x2B;</div>
+      </div>
+    </div>
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox__close" id="lbClose">&times;</button>
+      <button class="lightbox__nav lightbox__nav--prev" id="lbPrev">&#8592;</button>
+      <img src="" alt="" class="lightbox__img" id="lbImg" />
+      <button class="lightbox__nav lightbox__nav--next" id="lbNext">&#8594;</button>
+      <p class="lightbox__caption" id="lbCaption"></p>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section class="amenities" id="amenities">
+    <div class="amenities__bg">
+      <img src="images/render3.jpg" alt="Amenities" onerror="this.style.display='none'" />
+      <div class="amenities__overlay"></div>
+    </div>
+    <div class="container">
+      <p class="section-eyebrow center light">World-Class Amenities</p>
+      <h2 class="section-title center light">Every Detail,<br /><em>Perfected</em></h2>
+      <div class="amenities__grid">
+        <div class="amenity-card">
+          <div class="amenity-card__icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 34c0-3.3 8.1-6 18-6s18 2.7 18 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><ellipse cx="24" cy="34" rx="18" ry="4" stroke="currentColor" stroke-width="1.5"/><path d="M12 34V22M36 34V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M8 22c0-8.8 7.2-16 16-16s16 7.2 16 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <h3 class="amenity-card__title">Infinity Pool</h3>
+          <p class="amenity-card__desc">Resort-style pool overlooking the cityscape with dedicated kids' pool</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-card__icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="16" width="32" height="22" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M16 16V12a8 8 0 0116 0v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="27" r="3" stroke="currentColor" stroke-width="1.5"/></svg></div>
+          <h3 class="amenity-card__title">Premium Clubhouse</h3>
+          <p class="amenity-card__desc">Fully equipped clubhouse with banquet hall and private lounges</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-card__icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 38V20l14-10 14 10v18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="18" y="28" width="12" height="10" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M24 14v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <h3 class="amenity-card__title">Landscaped Gardens</h3>
+          <p class="amenity-card__desc">Tropical gardens with curated flora, walking trails and seating alcoves</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-card__icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M24 16v8l5 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3 class="amenity-card__title">24/7 Concierge</h3>
+          <p class="amenity-card__desc">Round-the-clock security, CCTV surveillance and valet services</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-card__icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 24c0-5.5 4.5-10 10-10s10 4.5 10 10-4.5 10-10 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M24 14V8M24 40v-6M8 24h6M34 24h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+          <h3 class="amenity-card__title">Fitness Centre</h3>
+          <p class="amenity-card__desc">State-of-the-art gym, yoga studio and spa with steam rooms</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-card__icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 36l4-8 8 4 8-12 4 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="6" y="8" width="36" height="32" rx="2" stroke="currentColor" stroke-width="1.5"/></svg></div>
+          <h3 class="amenity-card__title">Open-Air Dining</h3>
+          <p class="amenity-card__desc">Alfresco dining terrace surrounded by curated garden landscapes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section class="highlights">
+    <div class="container">
+      <div class="highlights__grid">
+        <div class="highlights__img-wrap">
+          <img src="images/render3.jpg" alt="Garden View" class="highlights__img" onerror="this.style.display='none'" />
+        </div>
+        <div class="highlights__content">
+          <p class="section-eyebrow">Why Skyipark</p>
+          <h2 class="section-title">Crafted for the<br /><em>Discerning Few</em></h2>
+          <ul class="highlights__list">
+            <li><span class="highlights__num">01</span><div><strong>Prime Location</strong><p>Situated at the heart of the city with seamless connectivity to IT hubs, schools and hospitals</p></div></li>
+            <li><span class="highlights__num">02</span><div><strong>Panoramic Views</strong><p>Every tower designed to capture breathtaking sunsets and unobstructed skyline vistas</p></div></li>
+            <li><span class="highlights__num">03</span><div><strong>Sustainable Design</strong><p>Rainwater harvesting, solar provisions and EV-ready parking for a greener tomorrow</p></div></li>
+            <li><span class="highlights__num">04</span><div><strong>Trusted Developer</strong><p>Backed by 20+ years of excellence and 10,000+ delivered homes across the region</p></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+        <div class="contact__info">
+          <p class="section-eyebrow light">Get in Touch</p>
+          <h2 class="section-title light">Book a Private<br /><em>Site Visit</em></h2>
+          <p class="contact__body">Our relationship managers are ready to guide you through every detail. Schedule an exclusive walkthrough at your convenience.</p>
+          <div class="contact__details">
+            <div class="contact__detail"><span class="contact__detail-icon">&#9742;</span><span>+91 98765 43210</span></div>
+            <div class="contact__detail"><span class="contact__detail-icon">&#9993;</span><span>hello@skyipark.com</span></div>
+            <div class="contact__detail"><span class="contact__detail-icon">&#9679;</span><span>Skyipark Sales Gallery, Pune</span></div>
+          </div>
+        </div>
+        <div class="contact__form-wrap">
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form-group"><input type="text" id="name" name="name" placeholder="Your Full Name" required /><label for="name">Full Name</label></div>
+            <div class="form-group"><input type="tel" id="phone" name="phone" placeholder="Phone Number" required /><label for="phone">Phone Number</label></div>
+            <div class="form-group"><input type="email" id="email" name="email" placeholder="Email Address" required /><label for="email">Email Address</label></div>
+            <div class="form-group"><select id="unit" name="unit"><option value="" disabled selected>Select Unit Type</option><option value="2bhk">2 BHK</option><option value="3bhk">3 BHK</option><option value="4bhk">4 BHK</option><option value="penthouse">Penthouse</option></select><label for="unit">Unit Type</label></div>
+            <div class="form-group form-group--full"><textarea id="message" name="message" rows="3" placeholder="Your Message (optional)"></textarea><label for="message">Message</label></div>
+            <button type="submit" class="btn btn--primary btn--full">Schedule a Visit</button>
+            <p class="form__note">* We respect your privacy. Your information is 100% secure.</p>
+          </form>
+          <div class="form__success" id="formSuccess">
+            <div class="form__success-icon">&#10003;</div>
+            <h3>Thank You!</h3>
+            <p>Our team will reach out to you within 24 hours to confirm your visit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo"><span class="nav__logo-sky">SKY</span><span class="nav__logo-i">i</span><span class="nav__logo-park">PARK</span></div>
+          <p class="footer__tagline">Elevate Your Living</p>
+        </div>
+        <div class="footer__links">
+          <a href="#overview">Overview</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#amenities">Amenities</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__rera">RERA Reg. No.: P52100012345 | All renders are artistic impressions. Actual product may vary.</p>
+        <p class="footer__copy">&copy; 2025 Skyipark. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
